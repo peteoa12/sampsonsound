@@ -1,0 +1,30 @@
+.ddev
+.vscode
+node_modules/
+wp-config.php
+wp-config-ddev.php
+wp-content/uploads/*
+wp-content/themes/*/public/css/*
+wp-content/themes/*/public/js/*
+wp-content/cache/
+.htaccess
+
+
+# Ignore everything in the root except the "wp-content" directory.
+/*
+!.gitignore
+!/etc
+!wp-content/
+!README.md
+.DS_Store
+# Ignore everything in the "wp-content" directory, except the "plugins"
+# and "themes" directories.
+wp-content/*
+!wp-content/plugins/
+!wp-content/themes/
+
+# Ignore everything in the "plugins" directory, except the plugins you
+# specify (see the commented-out examples for hints on how to do this.)
+wp-content/plugins/*
+!wp-content/plugins/acf-extended
+!wp-content/plugins/advanced-custom-fields-pro

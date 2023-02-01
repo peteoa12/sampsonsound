@@ -1,0 +1,47 @@
+{
+	"name": "sampsonsound",
+	"version": "1.0.0",
+	"description": "Sampson Sound",
+	"main": "gulpfile.js",
+	"devDependencies": {
+		"@babel/core": "^7.19.0",
+		"@babel/plugin-proposal-class-properties": "^7.18.6",
+		"@babel/preset-env": "^7.19.0",
+		"axios": "^0.27.2",
+		"browser-sync": "^2.27.10",
+		"browserslist": "^4.21.3",
+		"colors": "^1.4.0",
+		"fancy-log": "^2.0.0",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^8.0.0",
+		"gulp-babel": "^8.0.0",
+		"gulp-changed": "^4.0.3",
+		"gulp-cli": "^2.3.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-eslint": "^6.0.0",
+		"gulp-fn": "^0.0.3",
+		"gulp-htmllint": "^0.0.19",
+		"gulp-imagemin": "^7.1.0",
+		"gulp-newer": "^1.4.0",
+		"gulp-plumber": "^1.2.1",
+		"gulp-sass": "^5.1.0",
+		"gulp-sourcemaps": "^3.0.0",
+		"gulp-watch": "^5.0.1",
+		"http-proxy": "^1.18.1",
+		"sass": "^1.54.8"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"watch": "gulp",
+		"build": "gulp build"
+	},
+	"browserslist": [
+		">0.2%"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:resolute/nottodayflu.git"
+	},
+	"author": "Peter Norman DEV",
+	"license": "MIT"
+}
