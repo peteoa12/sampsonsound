@@ -16,4 +16,3 @@ function sampson_theme_enqueue_scripts() {
     wp_enqueue_script('main-js', get_stylesheet_directory_uri() . '/dist/js/main.js', false, '', true);
 }
 add_action( 'wp_enqueue_scripts', 'sampson_theme_enqueue_scripts' );
-?>
