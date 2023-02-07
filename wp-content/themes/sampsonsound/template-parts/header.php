@@ -28,6 +28,9 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;800&display=swap" rel="stylesheet">
 
+	<!-- FontAwesome -->
+	<script src="https://kit.fontawesome.com/ccf29b6af5.js" crossorigin="anonymous"></script>
+
 	<!-- Meta Pixel Code -->
 	<script>
 		!function(f,b,e,v,n,t,s)
@@ -72,7 +75,17 @@
 		</div>
 	</nav>
 	<!-- Mobile Nav -->
-	<nav class="main-nav__mobile d-sm-block d-lg-none">
+	<div class="overlay overlay-slide-left d-sm-block d-lg-none" id="overlay">
+		<nav class="main-nav__mobile">
+			<?php
+				wp_nav_menu( array(
+					'menu' => 'mobile nav',
+					'menu_class' => 'desktop-items'
+				));
+			?>
+		</nav>
+	</div>
+	<div class="mobile-header d-sm-block d-lg-none w-100">
 		<div class="container-fluid">
 			<div class="d-flex w-100 justify-content-end">
 				<div class="header-center d-flex justify-content-between w-100">
@@ -81,24 +94,16 @@
 							<img src="wp-content/themes/sampsonsound/dist/img/favicon-border.png" alt="Sampson Sound">
 						</a>
 					</div>
-					<div class="nav-toggle">X</div>
 				</div>
 			</div>
 		</div>
-		<!-- Nav Drawer -->
-		<div class="nav-drawer">
-			<div class="container">
-				<div class="row">
-					<?php
-						wp_nav_menu( array(
-							'menu' => 'mobile nav',
-							'menu_class' => 'mobile-items',
-						));
-					?>
-				</div>
-			</div>
+		<!-- HAMBURGER MENU -->
+		<div class="hamburger-menu d-sm-block d-lg-none" id="hamburger-menu">
+			<div class="menu-bar1"></div>
+			<div class="menu-bar2"></div>
+			<div class="menu-bar3"></div>
 		</div>
-	</nav>
+	</div>
 </header>
 <!-- Meta Basecode -->
 <noscript><img height="1" width="1" style="display:none"
